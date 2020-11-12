@@ -3,7 +3,6 @@ import GlobalStyle from './assets/styles/global';
 import { ToastContainer } from 'react-toastify';
 import { Routes } from './routes';
 import { BrowserRouter } from 'react-router-dom';
-import { Header } from './components/Header';
 
 const App: React.FC = () => {
   // useEffect(() => {
@@ -20,7 +19,6 @@ const App: React.FC = () => {
       <BrowserRouter>
         <ToastContainer />
         <GlobalStyle />
-        <Header />
         <Routes />
       </BrowserRouter>
     </StrictMode>

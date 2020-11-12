@@ -1,10 +1,12 @@
 import React from 'react';
-import { Container } from './styles';
-
+import { Container, IconContainer } from './styles';
+import { FaRegUserCircle } from 'react-icons/fa';
 const Header: React.FC = () => {
   return (
     <Container>
-      <h1>Header</h1>
+      <IconContainer>
+        <FaRegUserCircle size="50px" />
+      </IconContainer>
     </Container>
   );
 };

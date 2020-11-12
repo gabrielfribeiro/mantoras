@@ -1,6 +1,6 @@
 import { Form } from '@unform/web';
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import { RouteComponentProps, useHistory } from 'react-router-dom';
 import Button from '../../../components/UI/Button';
 import Input from '../../../components/UI/Input';
 import { Title } from '../../../components/UI/Title';
@@ -13,7 +13,8 @@ import {
   FormContainer,
 } from './styles';
 
-const Login: React.FC = () => {
+const Login: React.FC<RouteComponentProps> = ({ match }) => {
+  console.log(match);
   const handleSubmit = () => {
     console.log('form');
   };
