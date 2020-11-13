@@ -50,7 +50,7 @@ const Login: React.FC<RouteComponentProps> = ({ match }) => {
             <Button
               size="custom"
               type="submit"
-              onClick={() => history.push('/list-user')}
+              onClick={() => history.push('/list-labs')}
             >
               Entrar
             </Button>

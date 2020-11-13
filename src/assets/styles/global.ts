@@ -8,7 +8,7 @@ export default createGlobalStyle`
   * {
       box-sizing: border-box;
   }
-  body, input, button {
+  body, input, button, nav, div {
     font-family: 'Maven Pro', sans-serif;
     font-size: 16px;
   }
