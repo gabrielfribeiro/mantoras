@@ -18,9 +18,9 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen }) => {
           <HiOutlineDesktopComputer size="25px" />
           <span>Laboratórios</span>
         </NavLink>
-        <NavLink to="/reserve-lab" activeClassName="active">
+        <NavLink to="/reserve" activeClassName="active">
           <RiBookOpenLine size="25px" />
-          <span>Reservar Laboratórios</span>
+          <span>Reservar Laboratório</span>
         </NavLink>
         <NavLink to="/my-reserves" activeClassName="active">
           <RiSaveLine size="25px" />

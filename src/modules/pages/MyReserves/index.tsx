@@ -3,7 +3,7 @@ import { PageContent } from '../../../components/PageContent';
 import { ITableProps, Table } from '../../../components/Table';
 import { Container } from './styles';
 
-interface ILab {
+export interface ILab {
   lab: string;
   block: string;
   profesor: string;
