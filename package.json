@@ -23,8 +23,10 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "7.19.0",
     "firebase": "^7.23.0",
+    "lodash": "^4.17.20",
     "polished": "^4.0.3",
     "prettier": "^2.1.2",
+    "rc-table": "^7.11.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-icons": "^3.11.0",
@@ -58,6 +60,7 @@
     ]
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.165",
     "@types/react": "^16.9.52",
     "@types/styled-components": "^5.1.4"
   }
