@@ -14,7 +14,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen }) => {
   return (
     <Container isOpen={isOpen}>
       <Nav>
-        <NavLink to="/labs" activeClassName="active">
+        <NavLink to="/list-labs" activeClassName="active">
           <HiOutlineDesktopComputer size="25px" />
           <span>Laboratórios</span>
         </NavLink>
@@ -22,7 +22,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen }) => {
           <RiBookOpenLine size="25px" />
           <span>Reservar Laboratórios</span>
         </NavLink>
-        <NavLink to="/reserves" activeClassName="active">
+        <NavLink to="/my-reserves" activeClassName="active">
           <RiSaveLine size="25px" />
           <span>Minhas Reservas</span>
         </NavLink>
