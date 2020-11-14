@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { PageContent } from '../../../components/PageContent';
 import { ITableProps, Table } from '../../../components/Table';
-import firebase from '../../../firebase';
 import { Container, ContainerTable } from './styles';
 
 interface ILab {
@@ -14,9 +13,6 @@ interface ILab {
 }
 
 const ListLabs: React.FC = () => {
-  const [labList, setLabList] = useState<any>();
-  const laboratories: any[] = [];
-
   const columns: ITableProps<ILab>['columns'] = [
     {
       title: 'Laboratório',
@@ -53,40 +49,9 @@ const ListLabs: React.FC = () => {
       dataIndex: 'status',
       key: 'status',
       width: 100,
-      // render: () => {},
     },
   ];
-  let responseFirebase: any = '';
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const db = firebase.firestore();
-      responseFirebase = await db
-        .collection('labs')
-        .get()
-        .then((snapshot: any) => {
-          snapshot.docs.forEach((doc: any) => {
-            laboratories.push(doc.data());
-          });
-        })
-        .catch(() => console.log('Caiu no catch'));
-    };
-    fetchData();
-  }, [laboratories]);
-
-  console.log(laboratories);
-
-  // const labs = laboratories.map((laboratory) => {
-  //   console.log('lab', laboratory);
-  //   return {
-  //     lab: laboratory.lab,
-  //     block: laboratory.block,
-  //     profesor: laboratory.profesor,
-  //     course: laboratory.course,
-  //     schedule: laboratory.schedule,
-  //     status: laboratory.status,
-  //   };
-  // });
   const labs = [
     {
       lab: 'LAB - 06',
